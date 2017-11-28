@@ -11,8 +11,11 @@ import java.util.Random;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
-		int r = 0;
+ 
+		Random r1 = new Random();
 		
+		int random = new Random().nextInt(300);
+		random-=222;
 		//2. Now make r random. 
 		//   Create an object of the Random class
 		//   Hint: new Random().nextInt()
@@ -25,6 +28,6 @@ public class IntroToRandom {
 
 
 		
-		System.out.println(r); 
+		System.out.println(random); 
 	}
 }
